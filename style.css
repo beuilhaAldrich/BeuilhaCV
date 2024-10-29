@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Add box-sizing for better sizing control */
+}
+
+.main {
+    width: 100%;
+    background: url(5.png) no-repeat center center fixed; /* Ensure background covers entire area */
+    background-size: cover;
+    height: 109vh;
+    position: relative;
+}
+
+.main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center vertically */
+    justify-content: space-between; /* Space items evenly */
+    position: relative; /* Necessary for the positioning of the overlay */
+}
+
+.icon {
+    width: auto;
+    height: 10px;
+}
+
+.logo {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 5px;
+    padding-top: 20px; /* Keep this padding as is */
+}
+
+.menu {
+    margin-left: auto; /* This will push the menu to the right */
+    padding-top: 50px; /* Match this to the logo padding-top */
+}
+
+ul {
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin: 0 20px; /* Adjust margin for spacing */
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: rgb(28, 103, 109);
+}
+
+.content {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #ffffff;
+    position: relative;
+}
+
+.profile-text {
+    text-align: center; /* Center aligns everything in the profile text */
+    padding: 20px;
+}
+
+.profile-text .cn {
+    display: inline-block; /* Centers the button when in a centered text */
+    margin: 20px auto; /* Adds space and centers button */
+}
+
+.content .par {
+    padding-left: 20px;
+    padding-bottom: 25px;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    font-size: 25px; /* Increase this value as needed */
+    text-align: center;
+}
+
+.content h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.content .cn {
+    width: 160px;
+    height: 40px;
+    background: #1d4f49;
+    border: none;
+    margin-bottom: 50px; /* Increased margin-bottom to create more space above the quote */
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.content .cn a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.cn:hover {
+    background-color: #000000;
+}
+
+.social-links {
+    text-align: center; /* Center the social icons */
+    margin: 20px 0;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 30px; /* Adjust size as needed */
+    transition: color 0.4s ease;
+}
+
+.social-links a:hover {
+    color: rgb(28, 103, 109);
+}
+
+.quote-section {
+    text-align: center;
+    font-size: 18px;
+    margin: 400px 0 20px; /* Increase top margin to push it down and keep bottom margin minimal */
+    font-style: italic; /* Italicize for emphasis */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark footer for readability */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
