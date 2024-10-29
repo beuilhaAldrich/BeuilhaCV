@@ -4,11 +4,20 @@
     box-sizing: border-box; /* Add box-sizing for better sizing control */
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
 .main {
     width: 100%;
-    background: url(5.png) no-repeat center center fixed; /* Ensure background covers entire area */
+    background: url(5.png) no-repeat center center; /* Ensure background covers entire area */
     background-size: cover;
-    height: 109vh;
+    background-attachment: fixed;
+    height: 200%;
     position: relative;
 }
 
